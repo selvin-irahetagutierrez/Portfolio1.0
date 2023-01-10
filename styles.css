@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
 } 
 nav{
   display: flex;
@@ -149,4 +148,77 @@ input[type="checkbox"]{
 .name{
   text-align: center;
   font-size: 100px;
+}
+.description{
+  margin-left:200px;
+  margin-right: 200px;
+  font-size: 30px;
+  font-family: 'Inter Tight', sans-serif;
+  text-align: center;
+}
+@media all and (max-width: 450px) {
+  .name{
+    font-size: 50px;
+    padding-top:10%
+  }
+  .description{
+    margin-left:40px;
+    margin-right: 30px;
+    font-size:22px;
+  }
+}
+.btn{
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  line-height: 80px;
+  width: 380px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover,
+.btn:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.btn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+.contactme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+}
+@media all and (max-width:450px) {
+  .btn{
+    width:200px;
+  }
 }
