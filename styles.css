@@ -288,7 +288,7 @@ input[type="checkbox"]{
   padding: 20px;
   text-align: center;
   font-size: 20px;
-  margin-top: -40%;
+  margin-top: -20%;
 }
 @media all and (min-width:760px) {
   .amTitle{
