@@ -279,11 +279,75 @@ input[type="checkbox"]{
     margin-top: 10%;
   }
 }
+.skillsTab{
+  min-height:30vh;
+  background-color: #070b22;
+}
 .skills{
   font-size: 40px;
   text-align: center;
-  background-color: #070b22;
   color:white;
   display:grid;
-  min-height:30vh;
+
+}
+.icons{
+  width:10%;
+  height:auto;
+ margin:5%;
+ align-items: center;
+}
+.htmlicon{
+  margin-left:13%;
+
+}
+.resumeBtn{
+  background-color: #a4a5ad;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  line-height: 10px;
+  width: 380px;
+  margin-top: 5%;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+.resumeBtn:hover,
+.resumeBtn:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.resumeBtn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.resumeBtn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+.clickhere{
+  text-align: center;
+  color:#fff;
+  font-size: 20px;
 }
