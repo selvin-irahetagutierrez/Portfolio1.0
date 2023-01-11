@@ -322,6 +322,8 @@ input[type="checkbox"]{
   min-width: 0px;
   overflow: hidden;
   padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -357,10 +359,15 @@ input[type="checkbox"]{
   color:#fff;
   font-size: 20px;
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1000px) {
   .resumeBtn{
-    margin-left: 36%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
+    margin-top: 20px;
+  }
+  .skillsTab{
+    min-height:60vh;
   }
   
 }
