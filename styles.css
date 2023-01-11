@@ -80,7 +80,6 @@ input[type="checkbox"]{
     text-align: center;
     display: block;
     transition: all 0.3s ease;
-    opacity: 90%;
   }
   #click:checked ~ ul{
     left: 0;
@@ -369,7 +368,9 @@ input[type="checkbox"]{
   .skillsTab{
     min-height:60vh;
   }
-  
+  .clickhere{
+    font-size: 40px
+  }
 }
 footer{
   min-height: 40vh;
