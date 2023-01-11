@@ -61,11 +61,68 @@
     <p class='clickhere'>If you want to know what other skills I have click here! 👇</p>
     <a href='https://drive.google.com/file/d/1ob_eaFC_QhsX5umuORO6VK7jW5IQJCJo/view?usp=sharing' style="text-decoration:none !important;"> <button class="resumeBtn"> Resume </button></a>
   </div>
-  <section id=projects>
-
-  </section>
-  <section id='contactme'>
-
+  <section>
+    <h1 class='projectsTitles'>Projects</h1>
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <a href="#"><img src="images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg" style="width:100%"></a>        
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="#"><img src="images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg" style="width:100%"></a>
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <a href="#"><img src="images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg" style="width:100%;"></a>        
+        <div class="text">Caption Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
   </section>
   <footer id="footer" class="footer-distributed">
 
@@ -79,8 +136,8 @@
 
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/selvin-iraheta-gutierrez/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/selvin-irahetagutierrez/Portfolio1.0"><i class="fa fa-github"></i></a>
 
       </div>
 
@@ -90,7 +147,7 @@
 
       <p>Contact Me</p>
         <form action="https://formsubmit.co/0d0f317a4da0cdd7cf2343e041fda323" method="POST">
-        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="name" placeholder="Your Name" required>
         <input type="text" name="email" placeholder="Your Email" required>
         <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I'll be in contact shortly.">
         <textarea name="message" placeholder="Message"></textarea>
