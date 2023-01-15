@@ -340,7 +340,7 @@ input[type="checkbox"]{
   display: inline-flex;
   line-height: 10px;
   width: 380px;
-  margin-top: 5%;
+  margin-top: 2vh;
   max-width: 480px;
   min-height: 40px;
   min-width: 0px;
@@ -368,16 +368,7 @@ input[type="checkbox"]{
   color: #ffffff;
 }
 
-.resumeBtn:active {
-  background: #09223b;
-  color: rgb(255, 255, 255, .7);
-}
 
-.resumeBtn:disabled { 
-  cursor: not-allowed;
-  background: rgba(0, 0, 0, .08);
-  color: rgba(0, 0, 0, .3);
-}
 .clickhere{
   text-align: center;
   color:#fff;
